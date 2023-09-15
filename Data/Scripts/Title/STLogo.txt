@@ -398,7 +398,7 @@ event ObjectUpdate
 			object[tempObjectPos].drawOrder = 2
 			object[tempObjectPos].xpos += 0x1600000
 			object[tempObjectPos].ypos -= 0x1000000
-			shootingStar[tempObjectPos].delay = 90
+			shootingStar[tempObjectPos].delay = 110
 		end if
 		break
 
