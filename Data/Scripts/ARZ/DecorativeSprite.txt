@@ -1,0 +1,32 @@
+// ----------------------------------
+// RSDK Project: Sonic 2 Fixes and Restorations
+// Script Description: ARZ Decoration
+// Script Author: Twanvanb1
+// ----------------------------------
+
+// ========================
+// Events
+// ========================
+
+event ObjectDraw
+	DrawSpriteFX(0, FX_FLIP, object.xpos, object.ypos)
+end event
+
+
+event ObjectStartup
+	LoadSpriteSheet("ARZ/Objects.gif")
+	SpriteFrame(-8, -40, 16, 80, 206, 67)
+
+    foreach (TypeName[Decorative Sprite], arrayPos0, ALL_ENTITIES)	
+    	object[arrayPos0].drawOrder     = 4
+    next
+end event
+
+event RSDKDraw
+	DrawSpriteFX(0, FX_FLIP, object.xpos, object.ypos)
+end event
+
+event RSDKLoad
+	LoadSpriteSheet("ARZ/Objects.gif")
+	SpriteFrame(-8, -40, 16, 80, 206, 67)
+end event
