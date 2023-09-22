@@ -347,42 +347,42 @@ end event
 event ObjectStartup
 	LoadSpriteSheet("Global/Items.gif")
 	SpriteFrame(-16, -16, 32, 32, 18, 1) // 0 - Base monitor sprite
-	SpriteFrame(-8, -9, 16, 14, 18, 51) // 1 - Static 1
-	SpriteFrame(-8, -9, 16, 14, 35, 51) // 2 - Static 2
-	SpriteFrame(-8, -9, 16, 14, 18, 66) // 3 - MONITOR_RINGS
-	SpriteFrame(-8, -9, 16, 14, 35, 66) // 4 - MONITOR_SHIELD_BLUE
-	SpriteFrame(-8, -9, 16, 14, 18, 81) // 5 - MONITOR_INVINCIBILITY
-	SpriteFrame(-8, -9, 16, 14, 35, 81) // 6 - MONITOR_SPEEDSHOES
+	SpriteFrame(-8, -9, 16, 16, 18, 51) // 1 - Static 1
+	SpriteFrame(-8, -9, 16, 16, 35, 51) // 2 - Static 2
+	SpriteFrame(-8, -10, 16, 16, 18, 66)) // 3 - MONITOR_RINGS
+	SpriteFrame(-8, -10, 16, 16, 35, 66) // 4 - MONITOR_SHIELD_BLUE
+	SpriteFrame(-8, -10, 16, 16, 18, 83) // 5 - MONITOR_INVINCIBILITY
+	SpriteFrame(-8, -10, 16, 16, 35, 83) // 6 - MONITOR_SPEEDSHOES
 	
 	// Amy's monitor icon is at the end of the list
 #platform: USE_ORIGINS
 	if game.coinMode == false
 #endplatform
-		SpriteFrame(-8, -9, 16, 14, 18, 96)  // 7 - MONITOR_1UP_SONIC
-		SpriteFrame(-8, -9, 16, 14, 35, 96)  // 8 - MONITOR_1UP_TAILS
-		SpriteFrame(-8, -9, 16, 14, 18, 111) // 9 - MONITOR_1UP_KNUX
+		SpriteFrame(-8, -10, 16, 16, 18, 100)  // 7 - MONITOR_1UP_SONIC
+		SpriteFrame(-8, -10, 16, 16, 35, 100)  // 8 - MONITOR_1UP_TAILS
+		SpriteFrame(-8, -10, 16, 16, 18, 117) // 9 - MONITOR_1UP_KNUX
 #platform: USE_ORIGINS
 	else
-		SpriteFrame(-8, -9, 16, 14, 35, 186) // 7 - MONITOR_1UP_SONIC (Coin)
-		SpriteFrame(-8, -9, 16, 14, 35, 186) // 8 - MONITOR_1UP_TAILS (Coin but again)
-		SpriteFrame(-8, -9, 16, 14, 35, 186) // 9 - MONITOR_1UP_KNUX  (Coin but yet again)
+		SpriteFrame(-8, -10, 16, 16, 35, 202) // 7 - MONITOR_1UP_SONIC (Coin)
+		SpriteFrame(-8, -10, 16, 16, 35, 202) // 8 - MONITOR_1UP_TAILS (Coin but again)
+		SpriteFrame(-8, -10, 16, 16, 35, 202) // 9 - MONITOR_1UP_KNUX  (Coin but yet again)
 	end if
 #endplatform
 	
-	SpriteFrame(-8, -9, 16, 14, 35, 111) // 10 - MONITOR_SUPER
-	SpriteFrame(-8, -9, 16, 14, 18, 141) // 11 - MONITOR_SHIELD_BUBBLE
-	SpriteFrame(-8, -9, 16, 14, 35, 126) // 12 - MONITOR_SHIELD_FIRE
-	SpriteFrame(-8, -9, 16, 14, 18, 126) // 13 - MONITOR_SHIELD_LIGHTNING
-	SpriteFrame(-8, -9, 16, 14, 35, 141) // 14 - MONITOR_EGGMAN
-	SpriteFrame(-8, -9, 16, 14, 18, 156) // 15 - MONITOR_TELEPORT
-	SpriteFrame(-8, -9, 16, 14, 35, 156) // 16 - MONITOR_RANDOM
-	SpriteFrame(-8, -9, 16, 14, 18, 171) // 17 - MONITOR_DEBUG_SHIELD
-	SpriteFrame(-8, -9, 16, 14, 35, 171) // 18 - MONITOR_DEBUG_EMERALDS
+	SpriteFrame(-8, -10, 16, 16, 35, 117) // 10 - MONITOR_SUPER
+	SpriteFrame(-8, -10, 16, 16, 18, 151) // 11 - MONITOR_SHIELD_BUBBLE
+	SpriteFrame(-8, -10, 16, 16, 35, 134) // 12 - MONITOR_SHIELD_FIRE
+	SpriteFrame(-8, -10, 16, 16, 18, 134) // 13 - MONITOR_SHIELD_LIGHTNING
+	SpriteFrame(-8, -10, 16, 16, 35, 151) // 14 - MONITOR_EGGMAN
+	SpriteFrame(-8, -10, 16, 16, 18, 168) // 15 - MONITOR_TELEPORT
+	SpriteFrame(-8, -10, 16, 16, 35, 168) // 16 - MONITOR_RANDOM
+	SpriteFrame(-8, -10, 16, 16, 18, 185) // 17 - MONITOR_DEBUG_SHIELD
+	SpriteFrame(-8, -10, 16, 16, 35, 185) // 18 - MONITOR_DEBUG_EMERALDS
 #platform: USE_ORIGINS
 	if game.coinMode == false
-		SpriteFrame(-8, -9, 16, 14, 18, 201) // 19 - MONITOR_1UP_AMY
+		SpriteFrame(-8, -10, 16, 16, 18, 219) // 19 - MONITOR_1UP_AMY
 	else
-		SpriteFrame(-8, -9, 16, 14, 35, 186) // 19 - MONITOR_1UP_AMY (The long awaited return of Coin)
+		SpriteFrame(-8, -10, 16, 16, 35, 202) // 19 - MONITOR_1UP_AMY (The long awaited return of Coin)
 	end if
 #endplatform
 	
@@ -569,23 +569,23 @@ event RSDKLoad
 		LoadSpriteSheet("Global/Items.gif")
 	end if
 	SpriteFrame(-16, -16, 32, 32, 18, 1) // 0 - Base monitor sprite
-	SpriteFrame(-8, -9, 16, 14, 18, 66) // 1 - MONITOR_RINGS
-	SpriteFrame(-8, -9, 16, 14, 35, 66) // 2 - MONITOR_SHIELD_BLUE
-	SpriteFrame(-8, -9, 16, 14, 18, 81) // 3 - MONITOR_INVINCIBILITY
-	SpriteFrame(-8, -9, 16, 14, 35, 81) // 4 - MONITOR_SPEEDSHOES
-	SpriteFrame(-8, -9, 16, 14, 18, 96)  // 5 - MONITOR_1UP_SONIC
-	SpriteFrame(-8, -9, 16, 14, 35, 96)  // 6 - MONITOR_1UP_TAILS
-	SpriteFrame(-8, -9, 16, 14, 18, 111) // 7 - MONITOR_1UP_KNUX
-	SpriteFrame(-8, -9, 16, 14, 35, 111) // 8 - MONITOR_SUPER
-	SpriteFrame(-8, -9, 16, 14, 18, 141) // 9 - MONITOR_SHIELD_BUBBLE
-	SpriteFrame(-8, -9, 16, 14, 35, 126) // 10 - MONITOR_SHIELD_FIRE
-	SpriteFrame(-8, -9, 16, 14, 18, 126) // 11 - MONITOR_SHIELD_LIGHTNING
-	SpriteFrame(-8, -9, 16, 14, 35, 141) // 12 - MONITOR_EGGMAN
-	SpriteFrame(-8, -9, 16, 14, 18, 156) // 13 - MONITOR_TELEPORT
-	SpriteFrame(-8, -9, 16, 14, 35, 156) // 14 - MONITOR_RANDOM
-	SpriteFrame(-8, -9, 16, 14, 18, 171) // 15 - MONITOR_DEBUG_SHIELD
-	SpriteFrame(-8, -9, 16, 14, 35, 171) // 16 - MONITOR_DEBUG_EMERALDS
-	SpriteFrame(-8, -9, 16, 14, 18, 201) // 17 - MONITOR_1UP_AMY
+	SpriteFrame(-8, -8, 16, 16, 18, 66) // 1 - MONITOR_RINGS
+	SpriteFrame(-8, -9, 16, 16, 35, 66) // 2 - MONITOR_SHIELD_BLUE
+	SpriteFrame(-8, -9, 16, 16, 18, 81) // 3 - MONITOR_INVINCIBILITY
+	SpriteFrame(-8, -10, 16, 16, 35, 81) // 4 - MONITOR_SPEEDSHOES
+	SpriteFrame(-8, -10, 16, 16, 18, 96)  // 5 - MONITOR_1UP_SONIC
+	SpriteFrame(-8, -10, 16, 16, 35, 96)  // 6 - MONITOR_1UP_TAILS
+	SpriteFrame(-8, -10, 16, 16, 18, 111) // 7 - MONITOR_1UP_KNUX
+	SpriteFrame(-8, -10, 16, 16, 35, 111) // 8 - MONITOR_SUPER
+	SpriteFrame(-8, -10, 16, 16, 18, 141) // 9 - MONITOR_SHIELD_BUBBLE
+	SpriteFrame(-8, -10, 16, 16, 35, 126) // 10 - MONITOR_SHIELD_FIRE
+	SpriteFrame(-8, -10, 16, 16, 18, 126) // 11 - MONITOR_SHIELD_LIGHTNING
+	SpriteFrame(-8, -10, 16, 16, 35, 141) // 12 - MONITOR_EGGMAN
+	SpriteFrame(-8, -10, 16, 16, 18, 156) // 13 - MONITOR_TELEPORT
+	SpriteFrame(-8, -10, 16, 16, 35, 156) // 14 - MONITOR_RANDOM
+	SpriteFrame(-8, -10, 16, 16, 18, 171) // 15 - MONITOR_DEBUG_SHIELD
+	SpriteFrame(-8, -10, 16, 16, 35, 171) // 16 - MONITOR_DEBUG_EMERALDS
+	SpriteFrame(-8, -10, 16, 16, 18, 201) // 17 - MONITOR_1UP_AMY
 
 	AddEditorVariable("contents")
 	SetActiveVariable("contents")
