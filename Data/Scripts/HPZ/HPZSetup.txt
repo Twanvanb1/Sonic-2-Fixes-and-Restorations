@@ -884,9 +884,8 @@ event ObjectDraw
 	else
 		SetActivePalette(1, temp0, screen.ysize)
 	end if
-
+	
 	AddDrawListEntityRef(2, object.entityPos)
-	ClearScreen(160)
 end event
 
 
