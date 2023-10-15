@@ -140,14 +140,13 @@ event ObjectUpdate
 			object.paletteRow %= 9
 
 			GetTableValue(temp0, object.paletteRow, Eggman_palCycle1)
-			SetPaletteEntry(0, 197, temp0)
+			SetPaletteEntry(0, 206, temp0)
 
 			object.paletteRow2++
 			object.paletteRow2 %= 6
 
 			GetTableValue(temp0, object.paletteRow2, Eggman_palCycle2)
-			SetPaletteEntry(0, 203, temp0)
-			//RotatePalette(0, 197, 202, false)
+			SetPaletteEntry(0, 207, temp0)
 		end if
 	else
 		// In MBZ/Egg Gauntlet, where the palette indices used are different
